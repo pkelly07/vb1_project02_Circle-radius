@@ -10,6 +10,8 @@ Public Class frmMain
 
         ' Calculate and display the circle's area.
 
+        Const dblPI As Double = 3.14159
+
         Dim txtRadiusRawValue As String = txtRadius.Text
 
         Dim dblRadius As Double
@@ -27,8 +29,8 @@ Public Class frmMain
 
         Else
 
-            dblArea = 3.14159 * dblRadius ^ 2
-            lblArea.Text = dblArea.ToString()
+            dblArea = dblPI * dblRadius ^ 2
+            lblArea.Text = dblArea.ToString("N2")
 
         End If
 
